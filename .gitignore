@@ -1,0 +1,49 @@
+#Mercurial Ignore Rules for Android
+#Save as .hgignore in the repository base directory and add it to source control.
+syntax: glob
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+*.class
+*/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+.gradle/
+
+# Backups
+*~
+*.swp
+
+# Mercurial
+.hg/
+.hgignore
+
+syntax: regexp
+^(.*[\\/])?gen[\\/].*
+^(.*[\\/])?bin[\\/].*
+^(.*[\\/])?obj[\\/].*
+^(.*[\\/])?log[\\/].*
+^(.*[\\/])?obf[\\/].*
+^(.*[\\/])?jars[\\/].*
+^(.*[\\/])?jar-sources[\\/].*
+^(.*[\\/])?javadoc[\\/].*
+^(.*[\\/])?\.svn[\\/].*
+^(.*[\\/])?\.metadata[\\/].*
+^(.*[\\/])?\.settings[\\/].*
